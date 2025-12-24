@@ -1,5 +1,7 @@
 package com.model;
 
+import java.util.Set;
+
 public class Student {
 	
 	private int id;
@@ -7,6 +9,7 @@ public class Student {
 	private String city;
 	private double percentage;
 	
+	private Set<String> hobbies;
 	
 	@Override
 	public String toString() {
