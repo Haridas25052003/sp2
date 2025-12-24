@@ -11,18 +11,18 @@ public class Student {
 	private String city;
 	private double percentage;
 	
-	private List<String> hobbies=new LinkedList();
+	private List<Address> addresses=new LinkedList();
 	
-	public List<String> getHobbies() {
-		return hobbies;
+	public List<Address> getAddresses() {
+		return addresses;
 	}
-	public void setHobbies(List<String> hobbies) {
-		this.hobbies = hobbies;
+	public void setAddresses(List<Address> addresses) {
+		this.addresses = addresses;
 	}
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + ", hobbies="
-				+ hobbies + "]";
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + ", addresses="
+				+ addresses + "]";
 	}
 	public int getId() {
 		return id;
