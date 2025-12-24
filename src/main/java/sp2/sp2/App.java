@@ -1,5 +1,12 @@
 package sp2.sp2;
 
+
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.model.Student;
+
 /**
  * Hello world!
  *
@@ -8,6 +15,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        ApplicationContext context=new ClassPathXmlApplicationContext("bean.xml");
+        Student s=context.getBean(Student.class);
+        System.out.println(s);
     }
 }
