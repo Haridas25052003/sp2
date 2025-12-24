@@ -1,7 +1,9 @@
 package com.model;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class Student {
@@ -11,18 +13,18 @@ public class Student {
 	private String city;
 	private double percentage;
 	
-	private List<Address> addresses=new LinkedList();
+	private Map<String,List> details=new HashMap();
 	
-	public List<Address> getAddresses() {
-		return addresses;
+	public Map<String, List> getDetails() {
+		return details;
 	}
-	public void setAddresses(List<Address> addresses) {
-		this.addresses = addresses;
+	public void setDetails(Map<String, List> details) {
+		this.details = details;
 	}
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + ", addresses="
-				+ addresses + "]";
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + ", details="
+				+ details + "]";
 	}
 	public int getId() {
 		return id;

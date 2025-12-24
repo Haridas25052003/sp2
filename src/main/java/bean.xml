@@ -5,15 +5,26 @@
         
         <beans>
            <bean id="s1" class="com.model.Student">
-           <property name="hobbies">
-            <list>
-              <value>cricket</value>
-              <value>reading books</value>
-              <value>travelling</value>
-              <value>cooking</value>
-            </list>
-           </property>
-              
+            <property name="details" value="details">
+             <map>
+              <entry key="color">
+              <list>
+               <value>white</value>
+               <value>green</value>
+               <value>red</value>
+               <value>orange</value>
+              </list>
+              </entry>
+              <entry key="hobbies">
+              <list>
+               <value>reading</value>
+               <value>swimming</value>
+               <value>writing</value>
+               <value>coding</value>
+              </list>
+              </entry>
+             </map>
+            </property>
            </bean>
         
         </beans>
