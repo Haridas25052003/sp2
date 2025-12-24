@@ -1,5 +1,6 @@
 package com.model;
 
+import java.util.List;
 import java.util.Set;
 
 public class Student {
@@ -9,12 +10,12 @@ public class Student {
 	private String city;
 	private double percentage;
 	
-	private Set<String> hobbies;
+	private List<String> hobbies;
 	
-	public Set<String> getHobbies() {
+	public List<String> getHobbies() {
 		return hobbies;
 	}
-	public void setHobbies(Set<String> hobbies) {
+	public void setHobbies(List<String> hobbies) {
 		this.hobbies = hobbies;
 	}
 	@Override
