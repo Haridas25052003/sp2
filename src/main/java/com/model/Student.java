@@ -11,6 +11,12 @@ public class Student {
 	
 	private Set<String> hobbies;
 	
+	public Set<String> getHobbies() {
+		return hobbies;
+	}
+	public void setHobbies(Set<String> hobbies) {
+		this.hobbies = hobbies;
+	}
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + "]";
