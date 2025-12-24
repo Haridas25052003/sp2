@@ -8,6 +8,10 @@ public class Student {
 	private double percentage;
 	
 	
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + "]";
+	}
 	public int getId() {
 		return id;
 	}
