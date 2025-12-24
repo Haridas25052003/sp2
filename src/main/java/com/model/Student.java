@@ -1,5 +1,6 @@
 package com.model;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -10,7 +11,7 @@ public class Student {
 	private String city;
 	private double percentage;
 	
-	private List<String> hobbies;
+	private List<String> hobbies=new LinkedList();
 	
 	public List<String> getHobbies() {
 		return hobbies;
