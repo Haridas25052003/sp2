@@ -5,6 +5,14 @@
         
         <beans>
            <bean id="s1" class="com.model.Student">
+           <property name="hobbies">
+            <list>
+              <value>cricket</value>
+              <value>reading books</value>
+              <value>travelling</value>
+              <value>cooking</value>
+            </list>
+           </property>
               
            </bean>
         
